@@ -1,0 +1,87 @@
+<div id="main">
+	<!--轮播-->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div ng-repeat="a in slide" class="swiper-slide">
+				<a><img ng-src="{{a.activity.img}}"></a>
+			</div>
+		</div>
+		<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+	</div>
+
+	<!--menu菜单-->
+	<div id="nav">
+		<ul>
+			<li ng-repeat="n in nav">
+				<a>
+					<img ng-src="{{n.activity.img}}" />
+					<span>{{n.activity.name}}</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<!--列表1-->
+	<p>—— 品牌特卖  ——</p>
+	<div id="list1">
+		<ul>
+			<li ng-repeat="n in nav2">
+				<a><img ng-src="{{n.activity.img}}" /></a>
+			</li>
+		</ul>
+	</div>
+
+	<!--闪送到达-->
+	<div id="quick">
+		<a><img ng-src="{{pic}}" /></a>
+	</div>
+	
+	<!--列表2-->
+	<div id="list2">
+		<ul class="list-pic1">
+			<li ng-repeat="p in nav3">
+				<a><img ng-src="{{p.cactivity_detail.img}}" /></a>
+			</li>
+		</ul>
+		<ul class="list-pic2">
+			<li ng-repeat="m in nav4">
+				<a ui-sref="market({ids:m.cicons_detail.category_id})">
+					<img ng-src="{{m.cicons_detail.img}}" />
+					<span>{{m.cicons_detail.name}}</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="list-pic3">
+			<li ng-repeat="b in nav5">
+				<a><img ng-src="{{b.activity.img}}" /></a>
+			</li>
+		</ul>
+	</div>
+	
+	<!--主体分类-->
+	<div id="shopMain">
+		<!--优选-->
+		<div id="fruit" ng-repeat="y in all track by $index">
+			<h6><span>{{y.category_detail.name}}</span><hr color="yellow"/></h6>
+			<a class="more" ui-sref="market({ids:y.category_detail.category_id})">更多 ></a>
+			<div class="shopMain-pic">
+				<a><img ng-src="{{y.activity.img}}" /></a>
+			</div>
+			<div class="list-pic4">
+				<ul>
+					<li ng-repeat="x in y.category_detail.goods track by $index">
+						<a ui-sref="detailed({deta:x,flag:0})">
+							<img ng-src="{{x.img}}"/>
+							<p>{{x.keywords}}</p>
+							<span class="s1">精选</span>
+							<span class="kg">{{x.specifics}}</span>
+							<span class="price">￥{{x.price}}</span>
+						</a>
+						<p class="app"><button class="jia" ng-click="appendShop(x, $event)">+</button></p>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+<div id="main">
+	<ul class="list-left">
+		<li ng-class="{selected:x.id==sun}" ng-repeat="x in leftNav" ng-click="getShopFn(x.id)">{{x.name}}</li>
+	</ul>
+	<div class="list-right">
+		<p class="headerN"><span>全部分类 ∨</span>|<span>综合排序 ∨</span></p>
+		<p class="allType"><span ng-repeat="y in a1Nav">{{y.name}}</span></p>
+		<div class="a1">
+			<ul>
+				<li ng-repeat="z in shop"><!--,id:num-->
+					<a ui-sref="detailed({deta:z,flag:1})">
+						<img ng-src="{{z.img}}" />
+						<span class="nam">{{z.name}}</span>
+						<span class="s1">精选</span><span class="s2">{{z.pm_desc}}</span>
+						<span class="kg">{{z.specifics}}</span><br><span class="pri">￥{{z.price}}</span>
+					</a>
+					<p><button class="jian" ng-click="cutShop(z, $event)">-</button><span></span><button class="jia" ng-click="appendShop(z, $event)">+</button></p>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	
+</div>

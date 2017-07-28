@@ -1,0 +1,211 @@
+#main{
+	padding-top: 1.40625rem;
+	padding-bottom: 1.40625rem;
+}
+header {
+	width: 100%;
+	height: 1.5rem;
+	background-color: #fff;
+	display: flex;
+	font-size: 0.277778rem;
+	font-weight: bold;
+	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	line-height: 1.5rem;
+}
+header .a2{
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#start{
+	padding-bottom: 4.5rem;
+	font-size: 0.35rem;
+	background: #fff;
+	/*display: none;*/
+}
+#start img{
+	width: 100%;
+	height: 8rem;
+	background: #fff;
+	border: 1px solid cyan;
+}
+#start p{
+	text-align: center;
+	color: #808080;
+	line-height: 1.6rem;
+}
+#start button{
+	width: 25%;
+	height: 0.8rem;
+	border-radius: 0.15rem;
+	border: 1px solid #C0A16B;
+	background: #fff;
+	color: #C0A16B;
+	margin-left: 38%;
+}
+#appendMain{
+	width: 100%;
+}
+#appendMain p{
+	color: red;
+	font-size: 0.45rem;
+	line-height: 1.40625rem;
+	padding-left: 5%;
+	margin-bottom: 0.3rem;
+	background: #fff;
+}
+#appendMain .p1{
+	line-height: 1rem;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0;
+}
+#appendMain .p1 span{
+	font-size: 0.2rem;
+	display: inline-block;
+	width: 65%;
+	line-height: 0.7rem;
+	color: #666666;
+}
+#appendMain .p1 span:nth-child(1){
+	border-left: 4px solid yellow;
+	padding-left: 3%;
+	
+}
+#appendMain .p1 span:nth-child(2){
+	font-size: 0.4rem;
+	width: 25%;
+	border: 1px solid red;
+	color: red;
+	text-align: center;
+	border-radius: 0.15rem;
+	margin-left: 5%;
+}
+#appendMain .p2{
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0;
+}
+#appendMain .p2 span{
+	font-size: 0.45rem;
+	color: black;
+}
+#appendMain .p2 span:nth-child(2){
+	color: red;
+	padding-left: 3%;
+}
+#appendMain .p2 span:nth-child(3){
+	padding-left: 32%;
+}
+#appendMain .p3{
+	border-bottom: 1px solid #ccc;
+	color: black;
+}
+#appendMain .p3 .txt{
+	width: 72%;
+	height: 1rem;
+	border-radius: 0.15rem;
+	border: 1px solid #ccc;
+	margin-left: 3%;
+}
+#appendMain ul li{
+	padding-left: 3%;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+	margin-top: -0.3rem;
+	position: relative;
+}
+#appendMain ul li img{
+	/*border: 1px solid blue;*/
+	width: 1.8rem;
+	height: 1.8rem;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+#appendMain ul li .nam{
+	width: 70%;
+	line-height: 0.7rem;
+	position: absolute;
+	top: 0.3rem;
+	right: 3%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: black;
+	z-index: 999;
+	padding-left: 0;
+}
+#appendMain ul li .money{
+	width: 25%;
+	font-size: 0.4rem;
+	color: red;
+	position: absolute;
+	right: 47%;
+	top: 1.5rem;
+}
+#appendMain ul li .sl{
+	width: 40%;
+	height: 1rem;
+	position: absolute;
+	right: 0.3rem;
+	top: 1rem;
+	text-align: center;
+	/*background: red;*/
+}
+#appendMain ul li button{
+	width: 0.6rem;
+	line-height: 0.6rem;
+	border: 1px solid #666666;
+	border-radius: 50%;
+	font-size: 0.6rem;
+	color: red;
+	background: #fff;
+	position: absolute;
+	top: 30%;
+}
+.jian{
+	left: 20%;
+}
+.jia{
+	left: 80%;
+}
+#appendMain ul li .num{
+	display: inline-block;
+	width: 25%;
+	font-size: 0.5rem;
+	margin-left: 3%;
+}
+.footer{
+	color: black;
+}
+.footer input{
+	width: 0.45rem;
+	height: 0.45rem;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.footer span{
+	margin-left: 5%;
+}
+.footer .pri{
+	margin-left: 0;
+	display: inline-block;
+	width: 20%;
+}
+.footer a{
+	display: inline-block;
+	width: 2.5rem;
+	line-height: 0.9rem;
+	border: 1px solid red;
+	border-radius: 0.3rem;
+	margin-left: 13%;
+	text-align: center;
+	color: #fff;
+	font-size: 0.4rem;
+	background: orangered;
+}

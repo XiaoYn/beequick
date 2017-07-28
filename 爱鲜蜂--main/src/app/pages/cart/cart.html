@@ -1,0 +1,33 @@
+<div id="main">
+	<header>
+		<a href="#" class="a2">购物车</a>
+	</header>
+	
+	<!--购物车为空效果图-->
+	<div id="start" ng-show="flag">
+		<img src=""/>
+		<p>亲，购物车空空的耶~赶紧的去调好吃的吧</p>
+		<a ui-sref="home"><button>去 逛 逛</button></a>
+	</div>
+	
+	<!--购物车添加商品信息-->
+	<div id="appendMain" ng-hide="flag">
+		<p>鲜蜂侠需要您的精确坐标</p>
+		<p class="p1"><span>闪送超市</span><span>凑单专区</span><span>￥0元起送，22:00前满￥30免运费</span></p>
+		<p class="p2"><span>收货时间</span> <span>一小时送达</span><span>可预订 〉</span></p>
+		<p class="p3">收货备注 <input type="text" placeholder=" 可输入100字以内特殊要求内容" class="txt"></p>
+		<ul>
+			<li ng-repeat="x in cartShopsList track by $index">
+				<input type="checkbox" checked="checked" class="qx"/>
+				<img ng-src="{{x.img}}"/>
+				<p class="nam">{{x.name}}</p>
+				<span class="money">￥ {{x.price}}</span>
+				<p class="sl"><button class="jian" ng-click="cutShop(x, $event)">-</button><span class="num">{{x.num}}</span><button class="jia" ng-click="appendShop(x, $event)">+</button></p>
+			</li>
+		</ul>
+		<p class="footer">
+			<input type="checkbox" checked="checked" class="qx"/> 全选
+			<span>总价:￥</span><span class="pri">{{allPrice}}</span><a>结 算</a>
+		</p>
+	</div>
+</div>

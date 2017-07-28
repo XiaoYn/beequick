@@ -1,0 +1,148 @@
+#main{
+	padding-top: 1.40625rem;
+	padding-bottom: 1.40625rem;
+	font-size: 0.35rem;
+}
+.list-left{
+	width: 25%;
+	text-align: center;
+	line-height: 1.3rem;
+	position: fixed;
+	top: 1.40625rem;
+	left: 0;
+	overflow: scroll;
+	height: 81%;
+}
+.list-left li{
+	height: 1.3rem;
+	border-bottom: 1px solid #ccc;
+}
+.list-right{
+	width: 75%;
+	background: #fff;
+	float: right;
+	padding-bottom: 1.40625rem;
+	color: #777777;
+}
+.list-right .headerN{
+	background: rgba(255,255,255,0.9);
+	position: fixed;
+	top: 1.40625rem;
+	right: 0;
+	width: 71%;
+	border-bottom: 1.3px solid #ccc;
+	z-index: 9;
+}
+.list-right ul{
+	margin-top: 1.40625rem;
+}
+.list-right .headerN span{
+	display: inline-block;
+	line-height: 1.3rem;
+	width: 49%;
+	color: black;
+	text-align: center;
+}
+.list-right .allType{
+	background: rgba(255,255,255,0.9);
+	position: fixed;
+	top: 1.40625rem;
+	right: 0;
+	margin-top: 1.3rem;
+	width: 71%;
+	height: 1.3rem;
+	border: 1px solid red;
+	z-index: 1999;
+	display: none;
+}
+.list-right .allType span{
+	display: inline-block;
+	padding: 0.3rem;
+	line-height: 1rem;
+	margin-top: 0.3rem;
+	border: 1px solid red;
+}
+.list-right li{
+	float: right;
+	width: 95%;
+	height: 3rem;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.a1 ul li img{
+	width: 40%;
+}
+.a1 ul li .nam{
+	display: block;
+	width: 56%;
+	float: right;
+	margin-top: 0.3rem;
+	margin-right: 4%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.a1 ul li .s1,.s2,.kg,.pri{
+	display: block;
+	width: 1rem;
+	text-align: center;
+	border: 1px solid red;
+	border-radius: 7px;
+	float: left;
+	margin-top: -1.8rem;
+	margin-left: 40%;
+	color: red;
+}
+.a1 ul li .s2{
+	margin-left: 60%;
+	width: 1.7rem;
+	background: red;
+	color: #fff;
+	border: none;
+}
+.a1 ul li .kg,.pri{
+	width: 50%;
+	text-align: left;
+	margin-top: -1.15rem;
+	border: none;
+	color: #666666;
+}
+.a1 ul li .pri{
+	margin-top: -0.6rem;
+	color: red;
+}
+.a1 ul li p{
+	position: absolute;
+	top: 65%;
+	right: 5%;
+}
+.a1 ul li p button{
+	width: 0.7rem;
+	line-height: 0.7rem;
+	color: red;
+	border: 1px solid #666666;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 0.7rem;
+	position: absolute;
+	background: rgba(255,255,255,0.8);
+}
+.a1 ul li p span{
+	display: inline-block;
+	width: 1rem;
+	text-align: center;
+	position: absolute;
+	right: 0.8rem;
+	top: 0.1rem;
+}
+.jian{
+	right: 1.9rem;
+	display: none;
+}
+.jia{
+	right: 0;
+}
+.selected{
+	background: #fff;
+	border-left: 4px solid yellow;
+}

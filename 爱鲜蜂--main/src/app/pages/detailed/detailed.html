@@ -1,0 +1,39 @@
+<div id="main">
+	<header><!--({num：tid})-->
+		<a class="a1" ng-if="flag==0" ui-sref="home">〈👈</a><a class="a1" ng-if="flag==1" ui-sref="market">〈👈</a><a href="#" class="a2">{{sum.name}}</a>
+	</header>
+	
+	<!--商品详情-->
+	<div id="deta">
+		<img ng-src="{{sum.img}}"/>
+		<p class="nam">{{sum.name}}</p>
+		<span class="pri">￥{{sum.price}}</span>
+		<div id="detaile">
+			<p class="p1">—— 商品详情 ——</p>
+			<p class="p2"><span class="s1">品&emsp;&emsp;牌</span><span class="s2">{{sum.brand_name}}</span></p>
+			<p class="p2"><span class="s1">产品规格</span><span class="s2">{{sum.specifics}}</span></p>
+			<p class="p2"><span class="s1">保质期限</span><span class="s2">{{sum.org_source_value}}{{sum.safe_unit_desc}}</span></p>
+			<p class="p2"><span class="s1">产&emsp;&emsp;地</span><span class="s2">广东</span></p>
+		</div>
+	</div>
+	
+	<!--页脚-->
+	<footer class="detailedFooter">
+		<a ui-sref-active="active5">
+			<dl>
+				<dt><span style="color:#777777;font-size: 0.5rem;margin-top: -0.15rem;">❤</span></dt>
+				<dd>收藏商品</dd>
+			</dl>
+		</a>
+		<span class="appendShop">
+			添加商品：
+			<a ng-click="cutShop(sum, $event)">-</a><span class="number"></span><a ng-click="appendShop(sum, $event)">+</a>
+		</span>
+		<a class="cart" ui-sref="cart" ui-sref-active="active3">
+			<dl>
+				<dt><span></span></dt>
+				<dd>购物车</dd>
+			</dl>
+		</a>
+	</footer>
+</div>
