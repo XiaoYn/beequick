@@ -1,0 +1,60 @@
+<h1 id="detailsH">
+	<a ng-if="flagNum==1" ui-sref="home"><</a>
+	<a ng-if="flagNum==2" ui-sref="market"><</a>
+	<span>{{details.name}}</span>
+</h1>
+<img class="bigPic" ng-src="{{details.img}}">
+<p class="detailsP1">{{details.name}}</p>
+<p class="detailsP2">￥{{details.price}}</p>
+<div class="detailsP3"><span>{{details.pm_desc}}</span></div>
+<div class="detailsMain">
+	<div class="detailsHr1">
+		<hr>
+		<p>商品详情</p>
+	</div>
+	<p class="detailsMainP detailsMainP1">
+		<span class="detailsSpan1">品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌</span>
+		<span class="detailsSpan2">{{details.lang_name}}</span>
+	</p>
+	<p class="detailsMainP">
+		<span class="detailsSpan1">产品规格</span>
+		<span class="detailsSpan2">{{details.specifics}}</span>
+	</p>
+	<p class="detailsMainP">
+		<span class="detailsSpan1">保质期限</span>
+		<span class="detailsSpan2">{{details.org_source_value}}{{details.safe_unit_desc}}</span>
+	</p>
+	<p class="detailsMainP">
+		<span class="detailsSpan1">产&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地</span>
+		<span class="detailsSpan2"></span>
+	</p>
+	
+</div>
+<div>
+	<div class="detailsHr1 detailsPic">
+		<hr>
+		<p>图文详情</p>
+	</div>
+</div>
+<div class="white"></div>
+<div class="container detailsFooter"> 
+    <div class="row"> 
+        <div class="col-xs-2" style="padding:0">
+	        <!-- <div class="glyphicon glyphicon-heart"></div> -->
+        	<p>收藏</p>
+        </div>
+        <div class="col-xs-4" style="padding:0">
+        	添加商品
+        </div>
+        <div class="col-xs-3" style="padding:0">
+        	<button class="circleLeft" ng-click="cutShop(details,$event)">-</button>
+        	<span class="detailsNum">0</span>
+        	<button class="circleRight" ng-click="addShop(details,$event)">+</button>
+        </div>
+        <div class="col-xs-3" style="padding:0">
+        	<a ui-sref="cart" type="button" class="btn btn-default btn-sm shoppingAdd">
+          		<span class="glyphicon glyphicon-shopping-cart"></span>
+        	</a>
+        </div>
+    </div>
+</div>

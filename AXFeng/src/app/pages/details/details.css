@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	height: auto;
+	overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+#detailsH{
+	position: fixed;
+    left: 0;
+    top: -0.7rem;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    background: #ffd600;
+    font-size: 0.4rem;
+    line-height: 1.4rem;
+}
+#detailsH a{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1.4rem;
+    text-align: center;
+    width: 1rem;
+    font-size: 1rem;
+}
+.bigPic{
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: 10%;
+}
+.detailsP1{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.detailsP2{
+    text-align: center;
+    font-size: 0.5rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+.detailsP3 span{
+    margin-left: 0.5rem;
+    background: red;
+    border-radius: 10%;
+    color: white;
+}
+.detailsMain{
+    margin-top: 0.5rem;
+}
+.detailsHr1{
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+        height: 0.05rem;
+        background: white;
+    }
+    .detailsHr1 hr{
+        color: #cc9900;
+    }
+    .detailsHr1 p{
+        margin: 0 auto;
+        width: 40%;
+        text-align: center;
+        margin-top: -0.8rem;
+        font-size: 0.3rem;
+        background:white;
+    }
+.detailsMainP1{
+    margin-top: 1rem;
+}
+.detailsMainP{
+    margin-left: 0.5rem;
+}
+.detailsSpan1{
+    color: gray;
+}
+.detailsSpan2{
+    margin-left: 1rem;
+}
+.detailsFooter{
+    height: 1.4rem;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid gray;
+    background: white;
+    z-index: 9999;
+    font-size: 0.3rem;
+    background: yellow;
+}
+.detailsFooter div{
+    line-height: 1.4rem;
+
+}
+.circleLeft{
+    background: rgb(210,210,210);
+    color: red;
+    width: 0.8rem;
+    line-height: 0.8rem;
+    border-radius: 50%;
+    margin-right: 0.1rem;
+}
+.circleRight{
+    background: rgb(210,210,210);
+    color: red;
+    width: 0.8rem;
+    line-height: 0.8rem;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+}
+.shoppingAdd{
+    width: 2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    color:white;
+    background: yellow;
+    position: absolute;
+    right: 0;
+    bottom: -1.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.white{
+    height: 1.5rem;
+}

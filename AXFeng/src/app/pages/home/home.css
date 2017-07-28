@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	height: auto;
+	overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+#homeH{
+	position: fixed;
+    left: 0;
+    top: -0.7rem;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    background: #ffd600;
+    font-size: 0.4rem;
+    line-height: 1.4rem;
+}
+
+
+
+	.swiper-container1  {
+        width: 100%; 
+        overflow: hidden; 
+        margin-top: 1.4rem;
+    }
+    .swiper-container1  .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-container1 a{
+        display: block;
+        width: 100%;
+    }
+    .swiper-container1 img{
+        width: 100%;  
+    }
+    .navs{
+    	display: flex;
+    	text-align: center;
+    }
+
+    .navs div{
+    	width: 25%;
+
+    }
+    .navs div img{
+    	width: 80%;
+    }
+    .navs div p{
+    	width: 100%;
+    	font-size: 0.4rem;
+    	margin-top: 0.1rem;
+    }
+    .hr1{
+    	position: relative;
+    	width: 60%;
+    	margin: 0 auto;
+    	height: 0.05rem;
+        background: red;
+    }
+    .hr1 hr{
+        color: #cc9900;
+    }
+    .hr1 p{
+    	margin: 0 auto;
+    	width: 40%;
+    	text-align: center;
+        margin-top: -0.9rem;
+    	font-size: 0.3rem;
+    	background:white;
+    }
+	.swiper-container2 {
+        margin-top: 0.3rem;
+    }
+    .swiper-container2 .swiper-slide {
+        width: 10rem;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-container2 img{
+        width: 100px;
+    }
+    .Shop1{
+        width: 100%;
+    }
+    .Shop2{
+        width: 49%;
+    }
+    .container1{
+        text-align: center;
+        font-size: 0.3rem;
+    }
+    .container1 img{
+        width: 100%;
+    }
+    .lijian{
+        width: 100%;
+    }
+    .lijian img{
+        width: 49%;
+        /* border: 1px solid gray; */
+    }
+    .container2{
+        text-align: center;
+        margin-top: 0.5rem;
+        position: relative;
+    }
+    .topTitle{
+        height: 1.2rem
+    }
+    .container2 .title{
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    .container2 .more{
+        position: absolute;
+        font-size: 0.3rem;
+        right: 0;
+        top: 0.1rem;
+    }
+    .content{
+        margin-top: 0.2rem;
+    }
+    .container2Img{
+        width: 90%;
+    }
+    .container2Img2{
+        width: 90%;
+    }
+    .container2p{
+        width: 90%;
+        font-size: 0.01rem;
+        height: 1.0rem;
+        line-height: 0.5rem;
+        overflow: hidden;
+    }
+    .spanall{
+
+    }
+    .span1{
+        color: red;
+        font-size: 0.3rem;
+
+    }
+    .span2{
+        color: #ccc;
+        font-size: 0.01rem;
+        margin-left: 0;
+        text-decoration: line-through;
+    }
+    .spanBtn{
+        position: relative;
+    }
+    .span3{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .homeAddBtn,.homeCutBtn{
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        line-height: 0.6rem;
+        text-align: center;
+        color: red;
+        background: white;
+        font-size: 0.55rem;
+    }
+    .homeSum{
+        display: none;
+        height: 1rem;
+        line-height: 1rem;
+        width: 0.4rem;
+        text-align: center;
+    }
+    .homeCutBtn{
+        display: none;
+    }
+    .container3p{
+        font-size: 0.01rem;
+        width: 50%;
+        border-radius: 10%;
+        background: red;
+        color: white;
+    }
+    .white{
+        height: 1.5rem;
+    }
